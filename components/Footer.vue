@@ -1,10 +1,10 @@
 <template>
     <b-container fluid>
         <b-row class="footer">
-            隠しあいうえお
+           Welcome
         </b-row>
         <b-col cols="12" class="copyright">
-            &copy; 2020 Kito Laboratory.
+            &copy; 2021 Kito Laboratory.
         </b-col>
     </b-container>
 </template>

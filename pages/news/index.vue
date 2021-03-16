@@ -21,11 +21,14 @@
     <b-container fluid class="mt-2 pb-3">
       <b-row>
         <b-col md="9" class="mb-2">
+          <div v-if="news.length == 0" class="d-flex justify-content-center mt-5">
+            <b-spinner label="Large Spinner"></b-spinner>
+          </div>
           <b-card v-for="(article, index) in news" :key="index" class="article">
             <b-card-body class="text-center">
-              <b-card-text v-html="article[$i18n.locale]"></b-card-text>
+              <b-card-text v-html="article[localeContent]"></b-card-text>
             </b-card-body>
-            <b-card-text class="text-right">{{ article['date'] }}</b-card-text>
+            <b-card-text class="text-right">{{ article['date'].substr(0, 10) }}</b-card-text>
           </b-card>
         </b-col>
         <b-col md="3">
@@ -37,9 +40,10 @@
 </template>
 <script>
 import CardMenuColumn from '~/components/CardMenuColumn.vue'
-import news from '~/data/news.js'
+import axios from '~/plugins/axios'
 
 export default {
+  name: "news",
   head() {
     return {
       title: `${this.$t('お知らせ')} | ${this.$t('鬼頭研究室')}`
@@ -49,10 +53,24 @@ export default {
     CardMenuColumn
   },
   data: function() {
-        return {
-            news
-        }
+    return {
+      news: []
     }
+  },
+  computed: {
+    localeContent() {
+      return this.$i18n.locale == "ja" ? "content" : "content_en";
+    }
+  },
+  mounted() {
+    axios
+      .get("/news", { 
+        params: {
+          fields: "id,content,content_en,date"
+        }
+      })
+      .then(({ data }) => this.news = data.contents);
+  }
 }
 </script>
 <style scoped>
