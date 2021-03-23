@@ -1,6 +1,7 @@
 export default 
 [
-    "T. Kito, N. Moriya, J. Yamanoi: “Inter-organisational patent opposition network: how companies form adversarial relationships,” The Japanese Economic Review, https://doi.org/10.1007/s42973-020-00057-5 (2020).",
+    "K. Futagami, Y. Fukazawa, N. kapoor, T. Kito: “Pairwise acquisition prediction with SHAP value interpretation,” The Journal of Finance and Data Science, doi: 10.1016/j.jfds.2021.02.001 (2021).",
+    "T. Kito, N. Moriya, J. Yamanoi: “Inter-organisational patent opposition network: how companies form adversarial relationships,” The Japanese Economic Review, 72, 145-166 (2021).",
     "T. Kito, K. Futagami, N. Kapoor, Y. Fukazawa: “Predicting future pairs of acquirer and acquiree companies by using information of companies’ relationships and network positions,” The proceedings of Conference on Complex Systems (CCS) (2020).",
     "T. Kito, N. Moriya, J. Yamanoi: “The emergence of the inter-organisational adversarial network in strategic patenting,” The proceedings of Conference on Complex Systems (CCS) (2020).",
     "T. Ikezawa, T. Kito, T. Doi, Y. Fukazawa: “Capturing the trend in the IT industry via network analysis of company descriptions”, NetSci 2020, poster presentation (2020).",
