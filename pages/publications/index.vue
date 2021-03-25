@@ -42,6 +42,15 @@
           
           <h2 id="thesis">{{ $t('学位論文（2018年～）') }}</h2>
 
+          <h3>2020年度（卒業論文11件）</h3>
+          <table class="table table-borderless">
+            <tr><td colspan="2" class="table-title">{{ $t('卒業論文') }}</td></tr>
+            <tr v-for="(paper, index) in thesis['2020'].bachelor" :key="'2020git branch add_thesis_2021_bachelor_' + index">
+              <td class="publisher">{{ paper.publisher }}</td>
+              <td class="paper-title">{{ paper.title }}</td>
+            </tr>
+          </table>
+
           <h3>2019年度（卒業論文９件，修士論文３件）</h3>
           <p class="note">※修士論文３件は，筑波大学大学院システム情報工学研究科所属の学生によるものです．</p>
           <table class="table table-borderless">
