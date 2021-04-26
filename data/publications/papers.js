@@ -1,5 +1,13 @@
 export default 
 [
+    "Y. Takeuchi, T. Kito, J. Yamanoi: “Boundary Conditions of Optimal Distinctiveness and Imitation Strategies: A Computational Modeling Approach,” The Strategic Management Society 41st Annual Conference, 2021.",
+    "T. Kito, T. Furue: “Motif analysis of the establishing, sustaining, and unwinding of cross-shareholdings in Japan,” Networks 2021, 2021.",
+    "T. Kito, Y. Murata, N. Moriya, J. Yamanoi: “The dynamics of inter-organisational adversarial relationships in patenting,” Networks 2021, 2021.",
+    "T. Doi, T. Ishii, T. Ikezawa, T. Yasui, T. Kito: “Business domain information can be a good indicator for predicting the success of startups,” Networks 2021, 2021.",
+    "T. Yasui, T. Doi, T. Ikezawa, T. Ishii, T. Kito: “Investors’ investment portfolio diversity and startup success,” Networks 2021, 2021.",
+    "Y. Takada, H. Fukushige, T. Kito, H. Huang, P. Holme: “Daily rhythms of travel-route morphology probe the organization of cities,” Network 2021, 2021.",
+    "T. Kito, K. Ueda: “Measuring product relatedness for capturing product portfolio diversification strategies of auto-parts suppliers,” The Proceedings of The 28th International Annual EurOMA (European Operations Management Association) Conference, 2021.",
+  　"P. Liu, T. Kito, N. Masuda, A.E. Sarıyüce: “Temporal motifs in patent opposition and collaboration networks,” Poster presentation, Third Northeast Regional Conference on Complex Systems (2021).",
     "K. Futagami, Y. Fukazawa, N. kapoor, T. Kito: “Pairwise acquisition prediction with SHAP value interpretation,” The Journal of Finance and Data Science, doi: 10.1016/j.jfds.2021.02.001 (2021).",
     "T. Kito, N. Moriya, J. Yamanoi: “Inter-organisational patent opposition network: how companies form adversarial relationships,” The Japanese Economic Review, 72, 145-166 (2021).",
     "T. Kito, K. Futagami, N. Kapoor, Y. Fukazawa: “Predicting future pairs of acquirer and acquiree companies by using information of companies’ relationships and network positions,” The proceedings of Conference on Complex Systems (CCS) (2020).",
@@ -16,7 +24,6 @@ export default
     "T. Kito, S. New, F. Reed-Tsochas: “Disentangling the complexity of supply relationship formations: Firm product diversification and product ubiquity in the Japanese car industry,” International Journal of Production Economics, Vol. 206, pp.159-168 (2018).",
     "T. Kito, P. Holme: “Triadic and quadratic closure as mechanisms for inter-firm transactional network dynamics,” lightening presentation at The International Conference on Complex Networks and Their Applications (2018).",
     "A. Hamamoto, T. Kito: “Effects of industrial and geographical proximities of firms on the Japanese inter-firm network,” lightening presentation at The International Conference on Complex Networks and Their Applications (2018).",
-    "濱本章弘，鬼頭朋見：“企業間取引ネットワークの抽象化へ向けて：非均質なコミュニティの組成解析,” ネットワークが創発する知能研究会 (2018).",
     "濱本章弘，鬼頭朋見：“企業間取引ネットワークのコミュニティ分析による産業および地域クラスタの組成解析,” 日本経営工学会経営システム誌，Vol.27, No.4, pp.234-239 (2018).",
     "谷中峻輔，鬼頭朋見：“自動車産業サプライネットワークの構造分析と分類：サプライベースとサプライヤ依存度に注目したアプローチ,” 日本経営工学会経営システム誌，Vol.27, No.4, pp.227-233 (2018).",
   ]
