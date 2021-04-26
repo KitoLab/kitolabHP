@@ -6,7 +6,8 @@
         "修士論文": "修士論文",
         "卒業論文": "卒業論文",
         "学位論文（2018年～）": "学位論文（2018年～）",
-        "学術論文・学会発表（2018年〜）": "学術論文・学会発表（2018年〜）",
+        "学術論文・査読付き国際学会発表（2018年〜）": "学術論文・査読付き国際学会発表（2018年〜）",
+        "国内学会発表": "国内学会発表",
         "書籍（2015年以降）": "書籍（2015年以降）",
         "招待講演（2015年以降）": "招待講演その他（2015年以降）"
     },
@@ -16,7 +17,8 @@
         "修士論文": "Master's",
         "卒業論文": "Bachelor's",
         "学位論文（2018年～）": "Theses (2018-)",
-        "学術論文・学会発表（2018年〜）": "Journal Articles & Conference Presentations (refereed) (2018-)",
+        "学術論文・査読付き国際学会発表（2018年〜）": "Journal Articles & Conference Presentations (refereed) (2018-)",
+        "国内学会発表": "Presentations at domestic conferences",
         "書籍（2015年以降）": "Books (2015-)",
         "招待講演（2015年以降）": "Invited Speeches and others (2015-)"
     }
@@ -35,11 +37,14 @@
 
           <ul>
             <li><nuxt-link to v-scroll-to="'#thesis'">{{ $t('学位論文（2018年～）') }}</nuxt-link></li>
-            <li><nuxt-link to v-scroll-to="'#public'">{{ $t('学術論文・学会発表（2018年〜）') }}</nuxt-link></li>
+            <li><nuxt-link to v-scroll-to="'#public'">{{ $t('学術論文・査読付き国際学会発表（2018年〜）') }}</nuxt-link></li>
+            <li><nuxt-link to v-scroll-to="'#public_ja'">{{ $t('国内学会発表') }}</nuxt-link></li>
             <li><nuxt-link to v-scroll-to="'#book'">{{ $t('書籍（2015年以降）') }}</nuxt-link></li>
             <li><nuxt-link to v-scroll-to="'#talk'">{{ $t('招待講演（2015年以降）') }}</nuxt-link></li>
           </ul>
           
+
+          <!-- #thesis ... 卒業論文・修士論文 -->
           <h2 id="thesis">{{ $t('学位論文（2018年～）') }}</h2>
 
           <h3>2020年度（卒業論文11件）</h3>
@@ -74,15 +79,23 @@
             <tr><td class="publisher">濱本章弘</td><td class="paper-title">大規模実データを用いた企業間取引ネットワークの複雑ネットワーク解析</td></tr>
           </table>
 
-          <!-- 論文 -->
-          <h2 class="mb-3" id="public">{{ $t('学術論文・学会発表（2018年〜）') }}</h2>
+          <!-- #public ... 論文・国際学会 -->
+          <h2 class="mb-3" id="public">{{ $t('学術論文・査読付き国際学会発表（2018年〜）') }}</h2>
           <ul class="mb-5">
             <li v-for="(title, index) in papers" :key="'public_' + index" class="paper">
               {{ title }}
             </li>
           </ul>
+
+          <!-- #public_ja ... 国内学会 -->
+          <h2 class="mb-3" id="public_ja">{{ $t('国内学会発表') }}</h2>
+          <ul class="mb-5">
+            <li v-for="(title, index) in public_ja" :key="'public_ja_' + index" class="paper">
+              {{ title }}
+            </li>
+          </ul>
           
-          <!-- 書籍 -->
+          <!-- #book ... 書籍 -->
           <h2 class="mb-3" id="book">{{ $t('書籍（2015年以降）') }}</h2>
           <ul class="mb-5">
             <li v-for="(title, index) in books" :key="'book_' + index" class="paper">
@@ -90,7 +103,7 @@
             </li>
           </ul>
 
-          <!-- 講演 -->
+          <!-- #talk ... 講演 -->
           <h2 class="mb-3" id="talk">{{ $t('招待講演（2015年以降）') }}</h2>
           <ul class="mb-5">
             <li v-for="(title, index) in talks" :key="'talk_' + index" class="paper">
@@ -112,6 +125,7 @@
 import CardMenuColumn from "@/components/CardMenuColumn.vue";
 import thesis from "~/data/publications/thesis.js";
 import papers from "~/data/publications/papers.js";
+import public_ja from "~/data/publications/public_ja.js";
 import books from "~/data/publications/books.js";
 import talks from "~/data/publications/talks.js";
 
@@ -127,6 +141,7 @@ export default {
   computed: {
     thesis: () => thesis,
     papers: () => papers,
+    public_ja: () => public_ja,
     books: () => books,
     talks: () => talks,
   }
